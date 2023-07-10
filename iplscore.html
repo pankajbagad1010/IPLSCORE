@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IPL Score Prediction 2023</title>
+</head>
+
+<body style="background-color: rgb(102, 100, 442);">
+
+
+    <h1> IPL Score Prediction 2023 </h1>
+    <form method="GET" action="/predict_score">
+	
+		<br>
+      
+
+        <label>Batting_team:</label>
+        <select name = "batting_team">
+			<option value = "slt">select</option>
+            <option value = "KNR">Kolkata Knight Riders</option>
+            <option value = "CSK">Chennai Super Kings</option>
+            <option value = "RR">Rajasthan Royals</option>
+            <option value = "MI">Mumbai Indians</option>
+			<option value = "DC">Deccan Chargers</option>
+			<option value = "KIP">Kings XI Punjab</option>
+			<option value = "DEC">Deccan Chargers</option>
+			<option value = "RCB">Royal Challengers Bangalore</option>
+			<option value = "KNR">Kolkata Knight Riders</option>
+			<option value = "DD">Delhi Daredevils</option>
+			<option value = "KTK">Kochi Tuskers Kerala</option>
+			<option value = "PW">Pune Warriors</option>
+			<option value = "SH">Sunrisers Hyderabad</option>
+			<option value = "RPS">Rising Pune Supergiants</option>
+			<option value = "GL">Gujarat Lions</option>
+			<option value = "RPSG">Rising Pune Supergiant</option>
+        </select>
+
+        <br>
+      
+		<br>
+		
+        <label>Bowling_team:</label>
+        <select name = "bowling_team">
+			<option value = "slt">select</option>
+            <option value = "KNR">Kolkata Knight Riders</option>
+            <option value = "CSK">Chennai Super Kings</option>
+            <option value = "RR">Rajasthan Royals</option>
+            <option value = "MI">Mumbai Indians</option>
+			<option value = "DC">Deccan Chargers</option>
+			<option value = "KIP">Kings XI Punjab</option>
+			<option value = "DEC">Deccan Chargers</option>
+			<option value = "RCB">Royal Challengers Bangalore</option>
+			<option value = "KNR">Kolkata Knight Riders</option>
+			<option value = "DD">Delhi Daredevils</option>
+			<option value = "KTK">Kochi Tuskers Kerala</option>
+			<option value = "PW">Pune Warriors</option>
+			<option value = "SH">Sunrisers Hyderabad</option>
+			<option value = "RPS">Rising Pune Supergiants</option>
+			<option value = "GL">Gujarat Lions</option>
+			<option value = "RPSG">Rising Pune Supergiant</option>
+        </select>
+		
+		<br>
+		
+		<br>
+        <label>Overs:</label>
+        <input type = "text" name = "Over">
+        </select>
+
+        <br>
+        
+		<br>
+	
+		
+        <label>Runs:</label>
+        <input type = "text" name = "Runs">
+        </select>
+
+        <br>
+		
+		<br>
+		
+        <label>Wickets:</label>
+        <input type = "text" name = "Wickets">
+        </select>
+
+        <br>
+		
+		<br>
+		
+        <label>runs_in_prev_5:</label>
+        <input type = "text" name = "runs_in_prev_5">
+        </select>
+
+        <br>
+		
+		<br>
+		
+        <label>wickets_in_prev_5:</label>
+        <input type = "text" name = "wickets_in_prev_5">
+        </select>
+
+        <br>
+		
+
+        <input type = "submit" value="SUBMIT">
+
+        <br>
+
+        <h4><strong>The final predicted score (range): {} to {}" .</b> Only </strong></h4>
+
+
+    </form>
+
+
+</body>
+</html>
