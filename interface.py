@@ -4,7 +4,7 @@ import config
 import traceback
 app = Flask(__name__)
 
-@app.route('/ipsscore')
+@app.route('/')
 def home1():
   return render_template('iplscore.html')
 
@@ -47,7 +47,7 @@ def predict_score():
     except:
     
             print(traceback.print_exc())
-            return redirect(url_for('ipsscore'))
+            return redirect(url_for('home1'))
 
     if __name__ == "__main__":
         app.run(host='0.0.0.0', port=config.PORT_NUMBER)
