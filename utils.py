@@ -17,8 +17,8 @@ def __load_saved_data(self):
         with open(config.MODEL_FILE_PATH,'rb') as f:
             self.model = pickle.load(f)
 
-        with open(config.JSON_FILE_PATH,'r') as f:
-            self.json_data = json.load(f)
+        # with open(config.JSON_FILE_PATH,'r') as f:
+        #     self.json_data = json.load(f)
 
 def get_predicted_score(self):
     self.__load_saved_data()
